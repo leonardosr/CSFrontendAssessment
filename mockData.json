@@ -1,0 +1,417 @@
+{
+  "Users": [
+    {
+      "DisplayName": "Ali Gator (DABA)",
+      "Name": "Ali",
+      "Surname": "Gator",
+      "Department": "DABA",
+      "Email": "ali.gator@company.com",
+      "id": 12345,
+      "Manager": true,
+      "Roles": [
+        "Manager",
+        "Account Manager",
+        "SPOC"
+      ]
+    },
+    {
+      "DisplayName": "Baba Yaga (DABA)",
+      "Name": "Baba",
+      "Surname": "Yaga",
+      "Department": "DABA",
+      "Email": "baba.yaga@company.com",
+      "id": 12350,
+      "Manager": false,
+      "Roles": [
+        "Owner",
+        "Account Manager"
+      ]
+    },
+    {
+      "DisplayName": "Red Riding Hood (LFAB)",
+      "Name": "Red Riding",
+      "Surname": "Hood",
+      "Department": "LFAB",
+      "Email": "red.hood@company.com",
+      "id": 12355,
+      "Manager": false,
+      "Roles": [
+        "Compliance",
+        "SPOC"
+      ]
+    },
+    {
+      "DisplayName": "Luke Spooke (RUB)",
+      "Name": "Luke",
+      "Surname": "Spooke",
+      "Department": "RUB",
+      "Email": "luke.spooke@company.com",
+      "id": 12892,
+      "Manager": true,
+      "Roles": [
+        "Owner"
+      ]
+    },
+    {
+      "DisplayName": "Jack O’Lantern (RUB)",
+      "Name": "Jack",
+      "Surname": "O’Lantern",
+      "Department": "RUB",
+      "Email": "jack.olantern@company.com",
+      "id": 12855,
+      "Manager": false,
+      "Roles": [
+        "WUBWUBWUB",
+        "Drake"
+      ]
+    }
+  ],
+  "Requests": [
+    {
+      "RequestName": "Fables at the tables updated",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "Storyteller": 12345,
+      "WantedCharacters": "charA;charD;charFGKS",
+      "Deadline": 1577574000000,
+      "Budget": 250000,
+      "Status": "New",
+      "id": 12
+    },
+    {
+      "RequestName": "Frayed crayons",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 505000,
+      "Status": "New",
+      "id": 15
+    },
+    {
+      "RequestName": "Blue raider",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 505000,
+      "Status": "New",
+      "id": 13
+    },
+    {
+      "RequestName": "Rats and brats",
+      "Requestor": 12345,
+      "GoodEnding": "No",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "Storyteller": "",
+      "WantedCharacters": "Kristofer;Tyrone;Cyril;Twila",
+      "Deadline": null,
+      "Budget": 275000,
+      "Status": "Draft",
+      "id": 19
+    },
+    {
+      "RequestName": "Fables at the tables",
+      "Requestor": 12355,
+      "GoodEnding": "Depends",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": true,
+      "Storyteller": 12345,
+      "WantedCharacters": "charA;charD;charFGKS",
+      "Deadline": 1570534960256,
+      "Budget": 500000,
+      "Status": "Draft",
+      "id": 22
+    },
+    {
+      "RequestName": "Frayed crayons",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 505000,
+      "Status": "New",
+      "id": 25
+    },
+    {
+      "RequestName": "Blue raider",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 505000,
+      "Status": "New",
+      "id": 23
+    },
+    {
+      "RequestName": "Rats and brats",
+      "Requestor": 12345,
+      "GoodEnding": "No",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": true,
+      "Storyteller": 12345,
+      "WantedCharacters": null,
+      "Deadline": 1576191600000,
+      "Budget": 275000,
+      "Status": "New",
+      "id": 29
+    },
+    {
+      "RequestName": "Fables at the tables",
+      "Requestor": 12355,
+      "GoodEnding": "Depends",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": true,
+      "Storyteller": 12345,
+      "WantedCharacters": "charA;charD;charFGKS",
+      "Deadline": 1570534960256,
+      "Budget": 500000,
+      "Status": "Draft",
+      "id": 32
+    },
+    {
+      "RequestName": "Frayed crayons",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 505000,
+      "Status": "New",
+      "id": 35
+    },
+    {
+      "RequestName": "Blue raider",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 505000,
+      "Status": "New",
+      "id": 33
+    },
+    {
+      "RequestName": "Rats and brats",
+      "Requestor": 12345,
+      "GoodEnding": "No",
+      "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+      "NeedStoryteller": false,
+      "WantedCharacters": "",
+      "Deadline": 1570578960256,
+      "Budget": 275000,
+      "Status": "Draft",
+      "id": 39
+    },
+    {
+      "RequestName": "Test New timestamp",
+      "Requestor": 12355,
+      "GoodEnding": "Yes",
+      "Description": "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.",
+      "NeedStoryteller": true,
+      "Storyteller": 12892,
+      "WantedCharacters": "Kristofer;Tyrone;Lela;",
+      "Deadline": 1576623600000,
+      "Budget": 250000,
+      "Status": "New",
+      "id": 40
+    },
+    {
+      "RequestName": "Teste timestamp 2",
+      "Requestor": 12350,
+      "GoodEnding": "No",
+      "Description": "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.",
+      "NeedStoryteller": false,
+      "Storyteller": "",
+      "WantedCharacters": "Kristofer;",
+      "Deadline": 1576018800000,
+      "Budget": 10000000,
+      "Status": "New",
+      "id": 41
+    },
+    {
+      "RequestName": "Teste timestamp 2",
+      "Requestor": 12350,
+      "GoodEnding": "No",
+      "Description": "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.",
+      "NeedStoryteller": true,
+      "Storyteller": 12355,
+      "WantedCharacters": "Kristofer;",
+      "Deadline": 1576018800000,
+      "Budget": 10000000,
+      "Status": "New",
+      "id": 42
+    },
+    {
+      "RequestName": "Teste storyteller",
+      "Requestor": 12355,
+      "GoodEnding": "Yes",
+      "Description": "TesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTesteTeste",
+      "NeedStoryteller": true,
+      "Storyteller": 12355,
+      "WantedCharacters": "Kristofer;Russel;",
+      "Deadline": 1576710000000,
+      "Budget": 100000000000,
+      "Status": "New",
+      "id": 43
+    },
+    {
+      "RequestName": "Teste  sem storyteller",
+      "Requestor": 12345,
+      "GoodEnding": "Yes",
+      "Description": "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.",
+      "NeedStoryteller": false,
+      "Storyteller": "",
+      "WantedCharacters": "Cyril;",
+      "Deadline": 1576191600000,
+      "Budget": 60000000000,
+      "Status": "New",
+      "id": 44
+    },
+    {
+      "RequestName": "Filme da Mis",
+      "Requestor": 12855,
+      "GoodEnding": "Yes",
+      "Description": "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.",
+      "NeedStoryteller": true,
+      "Storyteller": 12345,
+      "WantedCharacters": "Russel;Tyrone;Twila;Lela;",
+      "Deadline": 1576710000000,
+      "Budget": 2000000,
+      "Status": "New",
+      "id": 45
+    },
+    {
+      "RequestName": "New request Good ending Test",
+      "Requestor": 12350,
+      "GoodEnding": "Depends",
+      "Description": "Wyrażam zgodę na kontaktowanie się ze mną, w tym na przesyłanie informacji handlowych i marketingowych o Pizza Domino’s od DP Polska S.A. z siedzibą w Warszawie za pośrednictwem środków komunikacji elektronicznej (e-mail), jak również wyrażam zgodę na przetwarzanie w tym celu danych osobowych (adresu e-mail) przez DP Polska S.A. z siedzibą w Warszawie. Podstawą prawną przetwarzania danych jest art. 6 ust. 1 lit. a) RODO. Przysługuje mi prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Więcej informacji w Regulaminie Serwisu.",
+      "NeedStoryteller": true,
+      "Storyteller": 12355,
+      "WantedCharacters": "Kristofer;Lela;Twila;",
+      "Deadline": 1576796400000,
+      "Budget": 50000000,
+      "Status": "New",
+      "id": 46
+    },
+    {
+      "RequestName": "New request Good ending Test",
+      "Requestor": 12350,
+      "GoodEnding": "Depends",
+      "Description": "Wyrażam zgodę na kontaktowanie się ze mną, w tym na przesyłanie informacji handlowych i marketingowych o Pizza Domino’s od DP Polska S.A. z siedzibą w Warszawie za pośrednictwem środków komunikacji elektronicznej (e-mail), jak również wyrażam zgodę na przetwarzanie w tym celu danych osobowych (adresu e-mail) przez DP Polska S.A. z siedzibą w Warszawie. Podstawą prawną przetwarzania danych jest art. 6 ust. 1 lit. a) RODO. Przysługuje mi prawo do cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Więcej informacji w Regulaminie Serwisu.",
+      "NeedStoryteller": true,
+      "Storyteller": 12355,
+      "WantedCharacters": "Cyril;Lela;Twila;",
+      "Deadline": 1576796400000,
+      "Budget": 50000000,
+      "Status": "New",
+      "id": 47
+    },
+    {
+      "RequestName": "New test",
+      "Requestor": 12355,
+      "GoodEnding": "Yes",
+      "Description": "Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Suco de cevadiss deixa as pessoas mais interessantis. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio.",
+      "NeedStoryteller": true,
+      "Storyteller": 12350,
+      "WantedCharacters": "nullTyrone;Twila;",
+      "Deadline": 1576623600000,
+      "Budget": 25000000,
+      "Status": "New",
+      "id": 48
+    }
+  ],
+  "EmailQueries": [
+    {
+      "to": "red.hood@company.com, baba.yaga@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Red Riding Hood (LFAB). Cheers, Story Team",
+      "id": 1
+    },
+    {
+      "to": "red.hood@company.com, baba.yaga@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Red Riding Hood (LFAB). Cheers, Story Team",
+      "id": 2
+    },
+    {
+      "to": "baba.yaga@company.com, red.hood@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Baba Yaga (DABA). Cheers, Story Team",
+      "id": 3
+    },
+    {
+      "to": "red.hood@company.com, luke.spooke@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Red Riding Hood (LFAB). Cheers, Story Team",
+      "id": 4
+    },
+    {
+      "to": "baba.yaga@company.com, red.hood@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Baba Yaga (DABA). Cheers, Story Team",
+      "id": 5
+    },
+    {
+      "to": "red.hood@company.com, red.hood@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Red Riding Hood (LFAB). Cheers, Story Team",
+      "id": 6
+    },
+    {
+      "to": "ali.gator@company.com, ",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Ali Gator (DABA). Cheers, Story Team",
+      "id": 7
+    },
+    {
+      "to": "jack.olantern@company.com, ali.gator@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Jack O’Lantern (RUB). Cheers, Story Team",
+      "id": 8
+    },
+    {
+      "to": "baba.yaga@company.com, red.hood@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Baba Yaga (DABA). Cheers, Story Team",
+      "id": 9
+    },
+    {
+      "to": "baba.yaga@company.com, red.hood@company.com",
+      "subject": "New Request",
+      "body": "Hi, A New request has been created by Baba Yaga (DABA). Cheers, Story Team",
+      "id": 10
+    },
+    {
+      "to": "ali.gator@company.com, ali.gator@company.com",
+      "subject": "New Request",
+      "body": "Hi, A new request has been created by Ali Gator (DABA). Cheers, Story Team",
+      "id": 11
+    },
+    {
+      "to": "red.hood@company.com, baba.yaga@company.com",
+      "subject": "New Request",
+      "body": "Hi, A new request has been created by Red Riding Hood (LFAB). Cheers, Story Team",
+      "id": 12
+    },
+    {
+      "to": "ali.gator@company.com, ali.gator@company.com",
+      "subject": "New Request",
+      "body": "Hi, A new request has been created by Ali Gator (DABA). Cheers, Story Team",
+      "id": 13
+    }
+  ]
+}

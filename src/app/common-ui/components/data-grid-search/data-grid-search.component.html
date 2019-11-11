@@ -1,0 +1,10 @@
+<div class="form-inline">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+                    <fa-icon [icon]="faSearch"></fa-icon>
+            </span>
+        </div>
+        <input type="text" class="form-control search-text" (blur)="onSearchStringUpdate()" [(ngModel)]="searchString" maxlength="100" placeholder="Search...">
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="grid-title">{{gridConfig.gridTitle}}</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <data-grid-pagination [collectionSize]="totalCount" [currentPage]="getRequestParams.page" [pageSize]="pageSize" (pageChange)="onPageChange($event)"></data-grid-pagination>
+    </div>
+    <div class="col-md-6">
+        <data-grid-search class="float-right" (search)="onSearch($event)"></data-grid-search>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table data-grid-component">
+            <thead>
+                <th *ngFor="let columnConfig of gridConfig.columnConfig" [ngClass]="{'sortable': columnConfig.sortable}" (click)="columnConfig.sortable ? sortBy(columnConfig.columnId) : false">
+                    {{columnConfig.columnLabel}} <fa-icon [icon]="getRequestParams.desc ? faCaretDown: faCaretUp" *ngIf="getRequestParams.sortBy === columnConfig.columnId"></fa-icon>
+                </th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of gridData" data-grid-list-item [listItemData]="data" [columnConfig]="gridConfig.columnConfig" (click)="handleRowClick(data.id)"></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <data-grid-pagination [collectionSize]="totalCount" [currentPage]="getRequestParams.page" [pageSize]="pageSize" (pageChange)="onPageChange($event)"></data-grid-pagination>
+    </div>
+</div>

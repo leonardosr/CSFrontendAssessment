@@ -1,0 +1,92 @@
+<form [formGroup]="requestForm">
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label>Request Name</label>
+            <input type="text" class="form-control" formControlName="RequestName" maxlength="255">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label>Requestor:</label>
+            <ng-select formControlName="Requestor">
+                <ng-option *ngFor="let user of userList" [value]="user.id">{{user.DisplayName}}</ng-option>
+            </ng-select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <label>Good ending: </label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" formControlName="GoodEnding" value="Yes">
+                <label class="form-check-label">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" formControlName="GoodEnding" value="Depends">
+                    <label class="form-check-label">Depends</label>
+                </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" formControlName="GoodEnding" value="No">
+                <label class="form-check-label">No</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label>Description:</label>
+            <textarea class="form-control" formControlName="Description" minlength="250"></textarea>
+            <small class="form-text">No spoilers please.</small>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label class="form-check-label">Need storyteller:</label>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" formControlName="NeedStoryteller" value="true" (change)="onStorytellerTick($event)">
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="isStorytellerVisible">
+            <div class="form-group col-md-12">
+                <label>Storyteller:</label>
+                <ng-select formControlName="Storyteller">
+                    <ng-option *ngFor="let user of userList" [value]="user.id">{{user.DisplayName}}</ng-option>
+                </ng-select>
+            </div>
+        </div>
+    <div class="row">
+        <div class="form-group col-md-2">
+                <label>Deadline:</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" ngbDatepicker [minDate]="minDate" [maxDate]="maxDate" #d="ngbDatepicker" formControlName="Deadline">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+                        <fa-icon [icon]="faCalendar"></fa-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label>Wanted Characters:</label>
+            <ng-select [multiple]="true" formControlName="WantedCharacters">
+                <ng-option *ngFor="let character of characterList" [value]="character">{{character}}</ng-option>
+            </ng-select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label>Budget</label>
+            <input class="form-control" formControlName="Budget" currencyMask [options]="currencyMaskConfig" min="250000">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <div class="btn-group btn-group-toggle float-right">
+                <a class="btn btn-outline-secondary" [routerLink]="'/' + routes.dashboard">Cancel</a>
+                <button class="btn btn-secondary" (click)="handleSaveAsDraft()" [disabled]="requestForm.invalid || requestForm.disabled">Save as Draft</button>
+                <button class="btn btn-dark" (click)="handleSubmit()" [disabled]="requestForm.invalid || requestForm.disabled">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

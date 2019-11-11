@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="dashboard-actions">
+            <button type="button" class="btn btn-dark" [routerLink]="'/' + routes.form">New Request</button>
+        </div>
+    </div>
+</div>
+<data-grid [gridConfig]="gridConfig" [gridData]="gridData" (refreshData)="getGridData($event)" [pageSize]="pageSize" [totalCount]="totalCount"></data-grid>
