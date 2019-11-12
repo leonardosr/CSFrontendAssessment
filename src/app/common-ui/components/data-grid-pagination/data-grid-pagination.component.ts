@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'data-grid-pagination',
   templateUrl: './data-grid-pagination.component.html',
-  styleUrls: ['./data-grid-pagination.component.sass']
+  styleUrls: ['./data-grid-pagination.component.scss']
 })
 export class DataGridPaginationComponent {
 

@@ -1,9 +1,8 @@
 <td *ngFor="let configItem of columnConfig">
     <ng-container [ngSwitch]="configItem.type">
-        <span *ngSwitchCase="'text'" [ngbTooltip]="listItemData[configItem.columnId] && listItemData[configItem.columnId].length >= 50 ? listItemData[configItem.columnId] : false" placement="right">{{ listItemData[configItem.columnId] | slice:0:49 }}</span>
-        <span *ngSwitchCase="'number'">{{ listItemData[configItem.columnId] }}</span>
-        <span *ngSwitchCase="'boolean'">{{ listItemData[configItem.columnId] }}</span>
+        <span *ngSwitchCase="'text'" [ngbTooltip]="listItemData[configItem.columnId] && listItemData[configItem.columnId].length >= 50 ? listItemData[configItem.columnId] : false" placement="right">{{ listItemData[configItem.columnId] | slice:0:49 }}<span *ngIf="listItemData[configItem.columnId] && listItemData[configItem.columnId].length >= 50">[...]</span></span>
         <span *ngSwitchCase="'timestamp'">{{ listItemData[configItem.columnId] ? timestampToDate(listItemData[configItem.columnId]) : '' }}</span>
         <span *ngSwitchCase="'currency'">{{ listItemData[configItem.columnId] | currency:'FBD ' }}</span>
+        <span *ngSwitchDefault>{{ listItemData[configItem.columnId] }}</span>
     </ng-container>
 </td>

@@ -19,7 +19,7 @@ import { faCalendar, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-form-page',
   templateUrl: './form-page.component.html',
-  styleUrls: ['./form-page.component.sass']
+  styleUrls: ['./form-page.component.scss']
 })
 export class FormPageComponent implements OnInit, OnDestroy {
 
@@ -155,10 +155,6 @@ export class FormPageComponent implements OnInit, OnDestroy {
             Budget: data.Budget
           }
         );
-
-        if(data.Status === 'New') {
-          this.requestForm.disable()
-        }
         
       })
     }

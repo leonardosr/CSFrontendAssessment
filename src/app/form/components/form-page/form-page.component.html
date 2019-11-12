@@ -1,48 +1,53 @@
 <form [formGroup]="requestForm">
     <div class="row">
         <div class="form-group col-md-12">
-            <label>Request Name</label>
+            <label>Request Name*:</label>
             <input type="text" class="form-control" formControlName="RequestName" maxlength="255">
         </div>
     </div>
     <div class="row">
         <div class="form-group col-md-12">
-            <label>Requestor:</label>
+            <label>Requestor*:</label>
             <ng-select formControlName="Requestor">
                 <ng-option *ngFor="let user of userList" [value]="user.id">{{user.DisplayName}}</ng-option>
             </ng-select>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <label>Good ending: </label>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" formControlName="GoodEnding" value="Yes">
-                <label class="form-check-label">Yes</label>
-            </div>
-            <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" formControlName="GoodEnding" value="Depends">
-                    <label class="form-check-label">Depends</label>
-                </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" formControlName="GoodEnding" value="No">
-                <label class="form-check-label">No</label>
-            </div>
+        <div class="form-group rb-container col-md-12">
+            <label>Good ending*: </label>
+            <label for="gEyes" class="form-check form-check-inline">
+                <input id="gEyes" class="form-check-input" type="radio" formControlName="GoodEnding" value="Yes">
+                <label for="gEyes" class="form-check-label">Yes</label>
+                <span class="checkmark"></span>
+            </label>
+            <label for="gEdep" class="form-check form-check-inline">
+                <input id="gEdep" class="form-check-input" type="radio" formControlName="GoodEnding" value="Depends">
+                <label for="gEdep" class="form-check-label">Depends</label>
+                <span class="checkmark"></span>
+            </label>
+            <label for="gEno" class="form-check form-check-inline">
+                <input id="gEno" class="form-check-input" type="radio" formControlName="GoodEnding" value="No">
+                <label for="gEno" class="form-check-label">No</label>
+                <span class="checkmark"></span>
+            </label>
         </div>
     </div>
     <div class="row">
         <div class="form-group col-md-12">
-            <label>Description:</label>
-            <textarea class="form-control" formControlName="Description" minlength="250"></textarea>
+            <label>Description*:</label>
+            <textarea class="form-control" formControlName="Description" minlength="250" rows="10"></textarea>
             <small class="form-text">No spoilers please.</small>
         </div>
     </div>
     <div class="row">
-        <div class="form-group col-md-12">
-            <label class="form-check-label">Need storyteller:</label>
-            <div class="form-check form-check-inline">
-                <input type="checkbox" formControlName="NeedStoryteller" value="true" (change)="onStorytellerTick($event)">
-            </div>
+        <div class="form-group chk-container col-md-12">
+            <label for="NeedStoryteller">Need storyteller:
+                <div class="form-check form-check-inline">
+                    <input id="NeedStoryteller" type="checkbox" formControlName="NeedStoryteller" value="true" (change)="onStorytellerTick($event)">
+                    <span class="checkmark"></span>
+                </div>
+            </label>
         </div>
     </div>
     <div class="row" *ngIf="isStorytellerVisible">
@@ -59,7 +64,7 @@
             <div class="input-group">
                 <input class="form-control" placeholder="yyyy-mm-dd" ngbDatepicker [minDate]="minDate" [maxDate]="maxDate" #d="ngbDatepicker" formControlName="Deadline">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button">
+                    <button class="btn btn-dark calendar" (click)="d.toggle()" type="button">
                         <fa-icon [icon]="faCalendar"></fa-icon>
                     </button>
                 </div>
@@ -83,8 +88,8 @@
     <div class="row">
         <div class="form-group col-md-12">
             <div class="btn-group btn-group-toggle float-right">
-                <a class="btn btn-outline-secondary" [routerLink]="'/' + routes.dashboard">Cancel</a>
-                <button class="btn btn-secondary" (click)="handleSaveAsDraft()" [disabled]="requestForm.invalid || requestForm.disabled">Save as Draft</button>
+                <a class="btn btn-outline-dark" [routerLink]="'/' + routes.dashboard">Cancel</a>
+                <button class="btn btn-dark" (click)="handleSaveAsDraft()" [disabled]="requestForm.invalid || requestForm.disabled">Save as Draft</button>
                 <button class="btn btn-dark" (click)="handleSubmit()" [disabled]="requestForm.invalid || requestForm.disabled">Submit</button>
             </div>
         </div>

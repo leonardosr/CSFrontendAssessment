@@ -1,0 +1,30 @@
+table.data-grid-component th {
+    position: relative;
+}
+
+table.data-grid-component th fa-icon {
+    position: absolute;
+    right: 5px;
+}
+
+table.data-grid-component tbody tr {
+    cursor: pointer;
+}
+
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+table.data-grid-component {
+    margin: 30px 0;
+
+    thead th {
+        border-bottom: 1px;
+        border-top: 0;
+    }
+}
+
+h2.grid-title {
+    margin: 30px 0;
+}

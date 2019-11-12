@@ -10,7 +10,7 @@ const PAGE_SIZE: string = '10';
 @Component({
   selector: 'app-dashboard-list',
   templateUrl: './dashboard-list.component.html',
-  styleUrls: ['./dashboard-list.component.sass']
+  styleUrls: ['./dashboard-list.component.scss']
 })
 export class DashboardListComponent implements OnInit {
 

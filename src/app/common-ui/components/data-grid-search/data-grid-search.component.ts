@@ -4,7 +4,7 @@ import { faSearch, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'data-grid-search',
   templateUrl: './data-grid-search.component.html',
-  styleUrls: ['./data-grid-search.component.sass']
+  styleUrls: ['./data-grid-search.component.scss']
 })
 export class DataGridSearchComponent implements OnInit {
 

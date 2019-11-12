@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'data-grid',
   templateUrl: './data-grid.component.html',
-  styleUrls: ['./data-grid.component.sass']
+  styleUrls: ['./data-grid.component.scss']
 })
 export class DataGridComponent {
 

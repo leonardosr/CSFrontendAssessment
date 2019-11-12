@@ -4,7 +4,7 @@ import { timestampToDate } from 'src/app/utils/utils';
 @Component({
   selector: '[data-grid-list-item]',
   templateUrl: './data-grid-list-item.component.html',
-  styleUrls: ['./data-grid-list-item.component.sass']
+  styleUrls: ['./data-grid-list-item.component.scss']
 })
 export class DataGridListItemComponent implements OnInit {
 

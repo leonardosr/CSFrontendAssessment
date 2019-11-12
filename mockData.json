@@ -64,20 +64,80 @@
         "WUBWUBWUB",
         "Drake"
       ]
+    },
+    {
+      "DisplayName": "Marcos Castro (GLO)",
+      "Name": "Marcos",
+      "Surname": "Castro",
+      "Department": "RUB",
+      "Email": "marcos.castro@company.com",
+      "id": 1231,
+      "Manager": false,
+      "Roles": []
+    },
+    {
+      "DisplayName": "Leonardo Salomao (IT)",
+      "Name": "Leonardo",
+      "Surname": "Salomao",
+      "Department": "RUB",
+      "Email": "leonardo.salomao@company.com",
+      "id": 1232,
+      "Manager": false,
+      "Roles": []
+    },
+    {
+      "DisplayName": "Rogerio do Inga (TR)",
+      "Name": "Rogerio",
+      "Surname": "do Inga",
+      "Department": "RUB",
+      "Email": "rogerinho@company.com",
+      "id": 1233,
+      "Manager": false,
+      "Roles": []
+    },
+    {
+      "DisplayName": "Julio da Van (TR)",
+      "Name": "Julio",
+      "Surname": "da Van",
+      "Department": "RUB",
+      "Email": "julinho@company.com",
+      "id": 1234,
+      "Manager": false,
+      "Roles": []
+    },
+    {
+      "DisplayName": "Maurilio dos Anjos (TR)",
+      "Name": "Maurilio",
+      "Surname": "dos Anjos",
+      "Department": "RUB",
+      "Email": "maurilio.dos.anjos@company.com",
+      "id": 1235,
+      "Manager": false,
+      "Roles": []
+    },
+    {
+      "DisplayName": "Renan da Kombi (TR)",
+      "Name": "Renan",
+      "Surname": "da Kombi",
+      "Department": "RUB",
+      "Email": "renan@company.com",
+      "id": 1236,
+      "Manager": false,
+      "Roles": []
     }
   ],
   "Requests": [
     {
-      "RequestName": "Fables at the tables updated",
+      "RequestName": "Fables at the tables",
       "Requestor": 12345,
       "GoodEnding": "Yes",
       "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
       "NeedStoryteller": false,
-      "Storyteller": 12345,
+      "Storyteller": "",
       "WantedCharacters": "charA;charD;charFGKS",
       "Deadline": 1577574000000,
       "Budget": 250000,
-      "Status": "New",
+      "Status": "Draft",
       "id": 12
     },
     {
@@ -85,11 +145,12 @@
       "Requestor": 12345,
       "GoodEnding": "Yes",
       "Description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
-      "NeedStoryteller": false,
-      "WantedCharacters": "",
-      "Deadline": 1570578960256,
+      "NeedStoryteller": true,
+      "Storyteller": 12892,
+      "WantedCharacters": "Tyrone;Cyril;Kristofer;Russel",
+      "Deadline": 1577401200000,
       "Budget": 505000,
-      "Status": "New",
+      "Status": "Draft",
       "id": 15
     },
     {

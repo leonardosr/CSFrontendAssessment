@@ -13,7 +13,7 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <table class="table data-grid-component">
+        <table class="table table-hover data-grid-component">
             <thead>
                 <th *ngFor="let columnConfig of gridConfig.columnConfig" [ngClass]="{'sortable': columnConfig.sortable}" (click)="columnConfig.sortable ? sortBy(columnConfig.columnId) : false">
                     {{columnConfig.columnLabel}} <fa-icon [icon]="getRequestParams.desc ? faCaretDown: faCaretUp" *ngIf="getRequestParams.sortBy === columnConfig.columnId"></fa-icon>
