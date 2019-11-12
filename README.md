@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Install json-server globally `npm install -g json-server`
 
-Run `json-server --watch .\mockData.json` for a Mock Api server on `http://localhost:300/`.
+Run `json-server --watch mockData.json` for a Mock Api server on `http://localhost:300/`.
 
 ## Code scaffolding
 
