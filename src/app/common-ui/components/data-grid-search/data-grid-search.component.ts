@@ -18,8 +18,10 @@ export class DataGridSearchComponent implements OnInit {
   ngOnInit() {
   }
 
-  public onSearchStringUpdate(): void {
-    this.search.emit(this.searchString);
+  public onKey({code}): void {
+    if(code === 'Enter') {
+      this.search.emit(this.searchString);
+    }
   }
 
 }

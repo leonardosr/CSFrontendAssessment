@@ -18,7 +18,7 @@ export class DashboardListComponent implements OnInit {
   public routes = ROUTES;
 
   public gridConfig: IdataGridConfig = {
-    gridTitle: 'Grid Title',
+    gridTitle: 'Request List',
     columnConfig: ACTIVE_ITEMS_COLUMNS_CONFIG,    
   };
   
